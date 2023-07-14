@@ -20,7 +20,7 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
    - https://code.visualstudio.com/download 에서 설치 가능.
      
 4) Open AI에서 API 생성(필수)
-   - https://platform.openai.com/ 에 로그인 후 API 생성
+   - https://platform.openai.com/ 에 로그인 후 프로필 클릭 > view API Keys > create new secret key > 이름입력(선택) API 생성
    - 이때, 한번 생성된 API는 다시 볼 수 없으므로 저장해두어야 함.
    - API 생성을 위해 카드 정보를 등록해두어야 함.
      
@@ -41,3 +41,14 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
 8) Auto-GPT 실행
    - cmd 실행 > AUTO-GPT 디렉토리에서 python -m autogpt 실행
    - 또는, Auto-GPT 폴더에서 run 배치파일 실행
+
+
+
+**자주 발생하는 오류**
+1) ModuleNotFoundError: No module named 'dotenv'
+해당 오류의 경우 크게 세 가지 방법으로 고칠 수 있다.
+- 환경 변수에 존재하는 여러 개의 Python PATH 삭제
+- DotEnv Module 다운로드
+- Python 재설치
+https://droidwin.com/autogpt-modulenotfounderror-no-module-named-dotenv-fix/#google_vignette 참고.
+3) 
