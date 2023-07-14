@@ -45,10 +45,10 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
 
 
 **자주 발생하는 오류**
+아래와 같이 ModuleNotFoundError가 계속해서 나타난다면, requirements.txt가 제대로 다운되었는지 확인한다.
 1) ModuleNotFoundError: No module named 'dotenv'
 해당 오류의 경우 크게 세 가지 방법으로 고칠 수 있다.
 - 환경 변수에 존재하는 여러 개의 Python PATH 삭제
 - DotEnv Module 다운로드
 - Python 재설치
 https://droidwin.com/autogpt-modulenotfounderror-no-module-named-dotenv-fix/#google_vignette 참고.
-3) 
