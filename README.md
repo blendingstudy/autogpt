@@ -2,10 +2,11 @@
 AutoGPT 조사
 
 # 1. AutoGPT란?
-AutoGPT란 GPT-4를 사용하는 python application으로, ChatGPT와 같이 사용자의 입력에 따른 대답을 생성한다. 이때, 자율적으로(Autonomous) 사용자의 임무에 대한 중간 보조 업무를 수행한다는 점에서 ChatGPT와 차이점을 가진다. 이러한 AutoGPT는 ChatGPT와 같은 언어모델 에이전트 여러 개로 구성되며, 각 에이전트들은 임무를 수행하기 위한 보조 업무를 생성하고 수행한다. 그 결과로, ChatGPT보다 훨씬 정확하고 많은 작업을 수행할 수 있다. 
+AutoGPT란 GPT-4를 사용하는 python application으로, ChatGPT와 같이 사용자의 입력에 따른 대답을 생성한다. 이때, 자율적으로(Autonomous) 사용자의 임무에 대한 중간 보조 업무를 수행한다는 점에서 ChatGPT와 차이점을 가진다. 이러한 AutoGPT는 ChatGPT와 같은 언어모델 에이전트 여러 개로 구성되며, 각 에이전트들은 임무를 수행하기 위한 보조 업무를 생성하고 수행한다. 그 결과로, ChatGPT보다 훨씬 정확하고 많은 작업을 수행할 수 있다.
 
 # 2. AutoGPT 설치법
 AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 있다면 API 키를 생성하여 설치하면 된다.
+또한, 해당 안내문은 Python 3.11.4, Auto GPT latest version을 기준으로 작성하였음을 알린다.
 
 1) Python과 Git 설치 (필수)
    - AutoGPT 버전에 따라 요구되는 버전이 달라질 수 있음. (현재는 python 3.8, 혹시 모르니 가장 최신버전을 다운로드 하자.)
@@ -46,12 +47,19 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
 
 **자주 발생하는 오류**
 
-우선, 아래와 같이 ModuleNotFoundError가 계속해서 나타난다면, requirements.txt가 제대로 다운되었는지 확인한다.
+1) UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 2: illegal multibyte sequence 의 인코딩 에러
+해당 오류의 경우 **윈도우 사용자들에게 나타나는 에러로**, 윈도우는 한글 기본 인코딩이 cp949인데 해당 문서는 utf-8로 쓰였기 때문에 나타나는 에러라고 볼 수 있다. 이를 해결하는 방법은 크게 두 가지가 있는데,
+- 해당 작업에서 나타나는 모든 한글을 없애기
+- 가상환경을 만들어서 설치하기
 
-1) ModuleNotFoundError: No module named 'dotenv'
+사실상 1번은 불가능에 가까우므로 가상환경을 만드는 것을 추천한다.
+
+3) ModuleNotFoundError: No module named 'dotenv' 등 모듈 에러
 해당 오류의 경우 크게 세 가지 방법으로 고칠 수 있다.
 - 환경 변수에 존재하는 여러 개의 Python PATH 삭제
 - DotEnv Module 다운로드
-- Python 재설치
-- 
+- Python 재설치 (버전 확인 필수)
+
 https://droidwin.com/autogpt-modulenotfounderror-no-module-named-dotenv-fix/#google_vignette 참고.
+
+
