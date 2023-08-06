@@ -33,6 +33,8 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
    - 메뉴 > API 및 서비스 > 라이브러리 > Custom search API 선택 > 사용 클릭
    - 사용 인증 정보 > 사용인 정보 만들기 > API 키 복사
    - https://programmablesearchengine.google.com/controlpanel/all 들어가서 추가 > 이름자유, 전체 웹 검색 체크 > 만들기 > 맞춤 설정 > 검색엔진 ID 확인
+  
+   해당 작업 후 API 키와 검색엔진 ID를 모두 저장해두자.
      
 7) API 입력
    - 다운로드 된 .env.template 파일에서 다음과 같이 실행 : 파일명을 .env 형태로 수정 > OPEN_API_KEY= 에 본인의 API Key 입력
@@ -43,16 +45,14 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
    - cmd 실행 > AUTO-GPT 디렉토리에서 python -m autogpt 실행
    - 또는, Auto-GPT 폴더에서 run 배치파일 실행
 
-
-
 **자주 발생하는 오류**
 
 1) UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 2: illegal multibyte sequence 의 인코딩 에러
-해당 오류의 경우 **윈도우 사용자들에게 나타나는 에러로**, 윈도우는 한글 기본 인코딩이 cp949인데 해당 문서는 utf-8로 쓰였기 때문에 나타나는 에러라고 볼 수 있다. 이를 해결하는 방법은 크게 두 가지가 있는데,
-- 해당 작업에서 나타나는 모든 한글을 없애기
-- 가상환경을 만들어서 설치하기
+해당 오류의 경우 **윈도우 사용자들에게 나타나는 에러로**, 윈도우는 한글 기본 인코딩이 cp949인데 해당 문서는 utf-8로 쓰였기 때문에 나타나는 에러라고 볼 수 있다. 이를 해결하기 위해서는 윈도우의 언어 설정을 바꾸는 방법이 있다. 
 
-사실상 1번은 불가능에 가까우므로 가상환경을 만드는 것을 추천한다.
+설정 > 시간 및 언어 > 언어 및 지역 > 기본 언어 설정 > 영어로 변환 
+
+이후 컴퓨터를 재실행하면 해당 에러가 없어진 것을 확인할 수 있다.
 
 3) ModuleNotFoundError: No module named 'dotenv' 등 모듈 에러
 해당 오류의 경우 크게 세 가지 방법으로 고칠 수 있다.
