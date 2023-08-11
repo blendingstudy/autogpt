@@ -1,0 +1,12 @@
+Instructions on how to use Auto-GPT effectively and efficiently:
+
+1. Start by understanding the purpose and capabilities of Auto-GPT.
+2. Familiarize yourself with the input prompt format and how to structure your requests.
+3. Experiment with different prompts and parameters to achieve the desired output.
+4. Use the 'execute_python_code' command to generate text using Auto-GPT.
+5. Review and refine the generated text to ensure accuracy and coherence.
+6. Iterate and refine your prompts and parameters to improve the quality of the generated text.
+7. Troubleshoot common issues such as incorrect prompts, insufficient context, or inappropriate parameters.
+8. Stay updated with the latest developments and best practices in using Auto-GPT.
+
+Remember to continuously update your knowledge base and adapt your approach as needed.

@@ -1,0 +1,18 @@
+Auto-GPT Troubleshooting Guide:
+
+1. Issue: Incorrect output
+   Solution: Check the input prompt for errors and ensure it is properly structured.
+
+2. Issue: Insufficient context
+   Solution: Provide more context in the input prompt to generate more accurate and relevant output.
+
+3. Issue: Incoherent text
+   Solution: Review and refine the generated text, adjusting the parameters and prompts as needed.
+
+4. Issue: Slow response time
+   Solution: Check your internet connection and the server status. If the issue persists, try reducing the length or complexity of the input prompt.
+
+5. Issue: Error messages
+   Solution: Read the error message carefully and refer to the Auto-GPT documentation for troubleshooting steps.
+
+Remember to continuously update this troubleshooting guide with new tips and solutions as you encounter and resolve common issues.
