@@ -63,3 +63,13 @@ AutoGPT는 Git과 VSC를 이용하여 설치할 수 있으며, OpenAi 계정이 
 https://droidwin.com/autogpt-modulenotfounderror-no-module-named-dotenv-fix/#google_vignette 참고.
 
 
+**Auto-GPT 예제**
+
+Auto-GPT를 이용한 다양한 언어 및 분야의 예제를 만들어보았고, 주제는 다음과 같다.
+- Google에 Auto-GPT 이용법을 검색해 how_to_use_autogpt.txt 파일 생성 (단순 구글링)
+- 계산기를 python으로 구현 (단순 프로그래밍)
+- 틱택토를 플레이할 수 있는 앱을 .apk형태로 구현 (앱 구현)
+- 게시판 기능이 있는 블로그 구현 (웹 구현)
+- MNIST dataset을 구분하는 간단한 CNN 모델 작성(딥러닝 구현)
+
+
